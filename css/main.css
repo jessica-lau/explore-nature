@@ -1,6 +1,7 @@
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -56,12 +57,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
   vertical-align: middle;
 }
 
@@ -97,6 +93,150 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*==========Base Header and Footer==========*/
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*========Header Styles==========*/
+
+header {
+
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*=========Footer Styles===========*/
+
+footer {}
+
+.footer-content {}
+
+footer .contact {}
+
+footer .social {
+
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {}
+
+/*=========Main Styles Homepage - Mobile===========*/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper h1 {}
+
+.form-description {}
+
+.form-description h3 {}
+
+.form {}
+
+.form h3 {}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.description-content {}
+
+/*=========Main Styles About Page ==========*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content {}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-content {}
+
+/*=========Main Styles FAQ Page========*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -138,8 +278,7 @@ textarea {
 * https://www.drupal.org/node/897638
 */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+.sr-only.focusable:active, .sr-only.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -169,8 +308,7 @@ textarea {
 *    `:before` to contain the top-margins of child elements.
 */
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
@@ -191,10 +329,7 @@ textarea {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -205,17 +340,14 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: underline;
   }
   a[href]:after {
@@ -228,15 +360,13 @@ textarea {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]:after, a[href^="javascript:"]:after {
     content: "";
   }
   pre {
     white-space: pre-wrap !important;
   }
-  pre,
-  blockquote {
+  pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -247,19 +377,14 @@ textarea {
   thead {
     display: table-header-group;
   }
-  tr,
-  img {
+  tr, img {
     page-break-inside: avoid;
   }
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid;
   }
 }
-
