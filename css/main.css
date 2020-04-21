@@ -120,7 +120,7 @@ a {
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.875em;
-  color: #282828;
+  color: #e2e3ed;
   font-weight: 600;
 }
 
@@ -247,6 +247,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../assets/nature3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
 }
 
 aside {
