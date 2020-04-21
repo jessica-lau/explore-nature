@@ -146,9 +146,13 @@ p {
 
 }
 
-img {}
+img { 
+	width: 70%;
+}
 
-figure {}
+figure {
+  margin: 0;
+}
 
 address {
   font-style: normal;
@@ -305,6 +309,11 @@ aside {
 
 .reviews h2 {
   margin-bottom: 40px;
+}
+
+.reviews figure {
+  width: 60%;
+ 
 }
 
 .reviews h3 {
@@ -545,6 +554,13 @@ input[type=button] {
     max-width: 640px;
     margin: 100px 0;
   }
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
   header {
     justify-content: space-around;
     padding: 33px 0;
