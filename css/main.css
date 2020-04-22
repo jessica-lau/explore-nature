@@ -184,7 +184,23 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
+  background: #c0c0c0;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -196,12 +212,16 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.125em;
 }
 
 header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding: 0;
 }
 
 /*=========Footer Styles===========*/
@@ -219,12 +239,9 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
-.footer-content {}
-
 footer .contact {
   margin-bottom: 50px;
 }
-
 
 footer .social-icons {
   display: flex;
@@ -246,7 +263,10 @@ footer .social-icons p i {
 }
 
 footer .copyright {
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 /*=========Main Styles Homepage - Mobile===========*/
@@ -267,17 +287,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #FFDAB9;
 }
-
-.content-wrapper h1 {}
-
-.form-description {}
-
-.form-description h3 {}
-
-.form {}
-
-.form h3 {}
 
 .features {
   display: flex;
@@ -315,6 +326,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #FFDAB9;
 }
 
 .reviews h2 {
@@ -330,8 +342,6 @@ aside {
   margin: 20px 0;
 }
 
-.description-content {}
-
 /*=========Main Styles About Page ==========*/
 
 .mission {
@@ -339,9 +349,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #FFDAB9;
 }
 
-.mission-content {}
+.mission-content p {
+  margin: 0 20px;
+}
 
 .map figure {
   position: relative;
@@ -364,6 +377,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #FFDAB9;
 }
 
 .contact-content p {
@@ -377,6 +391,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #FFDAB9;
 }
 
 .faq .content-wrapper {
@@ -387,12 +402,8 @@ aside {
   margin: 50px 0 0 0;
 }
 
-.faq h2 {
-  margin-bottom: 40px;
-}
-
 .faq-content {
-  margin-bottom: 50px;
+  margin: 50px 20px;
 }
 
 /*=======Input Box Styling=======*/
@@ -582,7 +593,7 @@ input[type=button] {
     margin: 100px 0;
   }
   header figure {
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -593,7 +604,7 @@ input[type=button] {
     padding: 33px 0;
   }
   header .content-wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
   header nav {
@@ -647,12 +658,10 @@ input[type=button] {
   footer .copyright {
     width: 100%;
   }
-
   footer .social-icons {
     width: 12.5em;
     justify-content: space-between;
   }
-
   /*--About--*/
   .mission-content {
     display: flex;
