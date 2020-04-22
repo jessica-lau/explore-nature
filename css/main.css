@@ -225,7 +225,6 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-footer .social {}
 
 footer .social-icons {
   display: flex;
@@ -237,6 +236,13 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.75em;
+  color: #585858;
 }
 
 footer .copyright {
@@ -641,6 +647,12 @@ input[type=button] {
   footer .copyright {
     width: 100%;
   }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   /*--About--*/
   .mission-content {
     display: flex;
