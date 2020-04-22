@@ -295,8 +295,14 @@ aside {
   flex-flow: row wrap;
 }
 
+.features i {
+  font-size: 4em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .reviews {
@@ -607,7 +613,7 @@ input[type=button] {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-basis: 50%;
   }
   .features .features-item-description {
@@ -645,11 +651,9 @@ input[type=button] {
   .mission-content p {
     width: 45%;
   }
-
   .map figure {
     padding-bottom: 40%;
   }
-
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -698,11 +702,9 @@ input[type=button] {
   .mission h2, .contact-section .content-wrapper h2 {
     width: 95%;
   }
-
   .map figure {
     padding-bottom: 30%;
   }
-
   .contact-section .content-wrapper h2 {
     margin-bottom: 45px;
   }
