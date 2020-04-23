@@ -106,6 +106,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
   text-align: left;
+  width: inherit;
 }
 
 ul, ol {
@@ -688,7 +689,7 @@ input[type=button] {
     justify-content: space-between;
   }
   .faq-content {
-    flex-basis: 40%
+    flex-basis: 40%;
   }
   .faq h2 {
     width: 100%;
